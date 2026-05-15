@@ -114,6 +114,10 @@ HealthInfoWindow < HeadlessMiniWindow
   icon: /images/topbuttons/healthinfo
   !text: tr('Health Info')  
 
+  UIButton
+    id: minimizeButton
+    hidden: true
+
   MiniWindowContents
     margin-top: 2
     

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2017 OTClient <https://github.com/edubart/otclient>
+ * Copyright (c) 2010-2026 OTClient <https://github.com/edubart/otclient>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,36 +20,11 @@
  * THE SOFTWARE.
  */
 
-#ifndef FRAMEWORK_UI_DECLARATIONS_H
-#define FRAMEWORK_UI_DECLARATIONS_H
+#pragma once
+#include "htmlcompat.h"
+#include "htmlnode.h"
+#include <string>
+#include <vector>
+#include <memory>
 
-#include <framework/global.h>
-
-class UIManager;
-class UIWidget;
-class UITextEdit;
-class UILayout;
-class UIBoxLayout;
-class UIHorizontalLayout;
-class UIVerticalLayout;
-class UIGridLayout;
-class UIAnchor;
-class UIAnchorGroup;
-class UIAnchorLayout;
-class UIFlexBox;
-
-using UIWidgetPtr = std::shared_ptr<UIWidget>;
-using UITextEditPtr = std::shared_ptr<UITextEdit>;
-using UILayoutPtr = std::shared_ptr<UILayout>;
-using UIBoxLayoutPtr = std::shared_ptr<UIBoxLayout>;
-using UIHorizontalLayoutPtr = std::shared_ptr<UIHorizontalLayout>;
-using UIVerticalLayoutPtr = std::shared_ptr<UIVerticalLayout>;
-using UIGridLayoutPtr = std::shared_ptr<UIGridLayout>;
-using UIAnchorPtr = std::shared_ptr<UIAnchor>;
-using UIAnchorGroupPtr = std::shared_ptr<UIAnchorGroup>;
-using UIAnchorLayoutPtr = std::shared_ptr<UIAnchorLayout>;
-
-using UIWidgetList = std::deque<UIWidgetPtr>;
-using UIAnchorList = std::vector<UIAnchorPtr>;
-
-#endif
+HtmlNodePtr parseHtml(const std::string& html);

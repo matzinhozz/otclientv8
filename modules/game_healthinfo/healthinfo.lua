@@ -93,6 +93,13 @@ function init()
   hideExperience()
 
   healthInfoWindow:setup()
+
+  if healthInfoWindow.forceOpen then
+    if healthInfoWindow.minimizeButton then
+      healthInfoWindow.minimizeButton:hide()
+    end
+    healthInfoWindow:getChildById('miniwindowTopBar').onDoubleClick = function() end
+  end
   
   if g_app.isMobile() then
     healthInfoWindow:close()

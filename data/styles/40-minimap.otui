@@ -262,6 +262,13 @@ MinimapWindow < MiniWindow
       anchors.fill: parent
 
   ResizeBorder
+    anchors.left: parent.left
+    anchors.top: parent.top
+    anchors.bottom: parent.bottom
+    &anchorLeft: true
+    enabled: true
+
+  ResizeBorder
     anchors.right: parent.right
     anchors.top: parent.top
     anchors.bottom: parent.bottom

@@ -21,8 +21,9 @@
     <OTCLIENT_LIBDEPS_SHARED>
         dbghelp.lib;
         winmm.lib;
+        avrt.lib;
         advapi32.lib;
-    		ole32.lib;
+     		ole32.lib;
         psapi.lib;
         mincore.lib;
         kernel32.lib;

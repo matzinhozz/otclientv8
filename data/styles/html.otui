@@ -1,0 +1,3 @@
+// UIHTML — base style for HTML/CSS widgets (text nodes, containers, etc.)
+UIHTML < UIWidget
+  focusable: false
